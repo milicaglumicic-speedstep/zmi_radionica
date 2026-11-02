@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="bs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жми радионица | Unikatni Personalizovani Pokloni (3D & CNC)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cream: '#FAF7F2',
+                            sand: '#EFE9E0',
+                            gold: '#C89D66',
+                            goldDark: '#A87C44',
+                            dark: '#1E1E24',
+                            coral: '#E06D53'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(250, 247, 242, 0.88);
+            backdrop-filter: blur(12px);
+        }
+        .card-shadow {
+            box-shadow: 0 12px 32px -8px rgba(30, 30, 36, 0.08);
+        }
+        .card-shadow:hover {
+            box-shadow: 0 20px 40px -10px rgba(200, 157, 102, 0.22);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- NAVIGACIJA -->
+    <header class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <!-- SVG ikonica inspirisana tvojim logom (Jednorog + Traktor u kvadratu) -->
+                <div class="w-12 h-12 rounded-xl bg-brand-sand border border-brand-gold/40 flex items-center justify-center overflow-hidden shadow-sm group-hover:border-brand-gold transition">
+                    <img src="assets/img/logo.jpg" alt="Жми радионица лого" class="w-full h-full object-cover" onerror="this.outerHTML='<span class=\'font-serif font-bold text-brand-goldDark text-xl\'>ЖМИ</span>'">
+                </div>
+                <div>
+                    <span class="block font-serif text-xl font-bold tracking-wide text-brand-dark">ЖМИ РАДИОНИЦА</span>
+                    <span class="block text-xs uppercase tracking-widest text-brand-goldDark font-semibold">3D Štampa • CNC • Ručni rad</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+                <a href="#katalog" class="hover:text-brand-goldDark transition">Katalog poklona</a>
+                <a href="#kako-poruciti" class="hover:text-brand-goldDark transition">Kako funkcioniše</a>
+                <a href="#o-nama" class="hover:text-brand-goldDark transition">Naša magija</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://instagram.com/" target="_blank" class="px-4 py-2.5 rounded-full text-xs font-semibold border border-brand-dark/15 hover:border-brand-dark transition flex items-center gap-2">
+                    <span>📸 Instagram</span>
+                </a>
+                <a href="#katalog" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-brand-dark text-white hover:bg-brand-goldDark transition shadow-sm">
+                    Poruči poklon
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SEKCIJA -->
+    <section class="pt-32 pb-16 md:pt-40 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-sand border border-brand-gold/30 text-brand-goldDark text-xs font-semibold tracking-wide uppercase">
+                    <span>✨ Spoj mašte i preciznog inženjeringa</span>
+                </div>
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold text-brand-dark leading-tight">
+                    Pokloni koji pričaju <span class="italic font-normal text-brand-goldDark">vašu priču</span>.
+                </h1>
+                <p class="text-lg text-brand-dark/75 max-w-2xl leading-relaxed">
+                    U <strong>Жми радионици</strong> spajamo 3D štampu, CNC obradu drveta i ručnu završnu obradu kako bismo stvorili unikatne, personalizovane uspomene — od mini 3D portreta dragih osoba, do pametnih postolja za igračke, ukrasa i kreativnih poklon-paketa za rođendane, praznike i ispraćaje.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#katalog" class="px-7 py-4 rounded-full bg-brand-gold hover:bg-brand-goldDark text-white font-semibold text-sm shadow-lg shadow-brand-gold/25 transition transform hover:-translate-y-0.5">
+                        Istraži kreacije
+                    </a>
+                    <a href="#kako-poruciti" class="px-7 py-4 rounded-full bg-white hover:bg-brand-sand text-brand-dark border border-brand-sand font-semibold text-sm transition">
+                        Kako se personalizuje?
+                    </a>
+                </div>
+                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-brand-sand max-w-lg text-xs text-brand-dark/70">
+                    <div>
+                        <strong class="block text-brand-dark text-sm">100% Unikatno</strong>
+                        Prilagođeno imenu, slici ili povodu
+                    </div>
+                    <div>
+                        <strong class="block text-brand-dark text-sm">3D + CNC Izrada</strong>
+                        Vrhunski materijali i detalji
+                    </div>
+                    <div>
+                        <strong class="block text-brand-dark text-sm">Brzo Poručivanje</strong>
+                        Direktno putem WhatsApp-a ili IG
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Vizualni Kolaž -->
+            <div class="lg:col-span-5 grid grid-cols-2 gap-4 relative">
+                <div class="space-y-4">
+                    <div class="rounded-2xl overflow-hidden shadow-md bg-white p-2 border border-brand-sand">
+                        <img src="assets/img/figurica-1.jpg" alt="Personalizovana 3D figurica" class="w-full h-52 object-cover rounded-xl" onerror="this.src='https://placehold.co/400x500/EFE9E0/A87C44?text=3D+Figurica'">
+                        <p class="text-xs font-semibold text-center py-2 text-brand-dark/80">3D Figurica po slici</p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-md bg-white p-2 border border-brand-sand">
+                        <img src="assets/img/halloween-1.jpg" alt="Ukras za vrata" class="w-full h-44 object-cover rounded-xl" onerror="this.src='https://placehold.co/400x400/EFE9E0/A87C44?text=Ukras+za+vrata'">
+                        <p class="text-xs font-semibold text-center py-2 text-brand-dark/80">CNC & 3D Ukrasi za vrata</p>
+                    </div>
+                </div>
+                <div class="space-y-4 pt-6">
+                    <div class="rounded-2xl overflow-hidden shadow-md bg-white p-2 border border-brand-sand">
+                        <img src="assets/img/bluey-1.jpg" alt="Postolje za Bluey figurice" class="w-full h-48 object-cover rounded-xl" onerror="this.src='https://placehold.co/400x450/EFE9E0/A87C44?text=Bluey+Postolje'">
+                        <p class="text-xs font-semibold text-center py-2 text-brand-dark/80">Stalak za figurice sa pinovima</p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-md bg-brand-dark text-white p-5 flex flex-col justify-between h-48">
+                        <span class="text-2xl">🦄 🚜</span>
+                        <div>
+                            <p class="font-serif italic text-brand-gold text-base">„Svaki poklon ima svoj pečat.“</p>
+                            <p class="text-xs text-white/70 mt-1">Originalni Жми радионица žig na svakom proizvodu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG PROIZVODA (MODULARNI DIO) -->
+    <section id="katalog" class="py-16 bg-white border-y border-brand-sand">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark">Naša ponuda</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-1">Spremno za izradu i personalizaciju</h2>
+                </div>
+                <!-- Filteri po kategorijama/prilikama -->
+                <div class="flex flex-wrap gap-2" id="filter-container">
+                    <button onclick="filterProducts('all')" class="filter-btn active px-4 py-2 rounded-full text-xs font-semibold bg-brand-dark text-white transition">Svi pokloni</button>
+                    <button onclick="filterProducts('figurice')" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-brand-cream hover:bg-brand-sand text-brand-dark transition">3D Figurice</button>
+                    <button onclick="filterProducts('djeca')" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-brand-cream hover:bg-brand-sand text-brand-dark transition">Za djecu i igračke</button>
+                    <button onclick="filterProducts('ukrasi')" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-brand-cream hover:bg-brand-sand text-brand-dark transition">Ukrasi i praznici</button>
+                    <button onclick="filterProducts('ispracaji')" class="filter-btn px-4 py-2 rounded-full text-xs font-semibold bg-brand-cream hover:bg-brand-sand text-brand-dark transition">Ispraćaji i rođendani</button>
+                </div>
+            </div>
+
+            <!-- Mreža proizvoda (Puni se dinamički iz JS-a) -->
+            <div id="products-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"></div>
+        </div>
+    </section>
+
+    <!-- KAKO FUNKCIONIŠE PORUČIVANJE -->
+    <section id="kako-poruciti" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-goldDark">Jednostavan proces</span>
+            <h2 class="font-serif text-3xl font-bold mt-1">Od vaše ideje do gotovog poklona</h2>
+            <p class="text-sm text-brand-dark/70 mt-2">Bez komplikovanih korpi i registracija. Sve dogovaramo direktno, brzo i lično.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-7 rounded-2xl border border-brand-sand card-shadow">
+                <div class="w-10 h-10 rounded-full bg-brand-sand text-brand-goldDark font-bold flex items-center justify-center mb-4">1</div>
+                <h3 class="font-serif text-lg font-bold mb-2">Izaberite proizvod i opcije</h3>
+                <p class="text-sm text-brand-dark/75 leading-relaxed">Kliknite na željeni proizvod u katalogu, unesite tekst za gravuru, broj godina, ime ili posebne želje.</p>
+            </div>
+            <div class="bg-white p-7 rounded-2xl border border-brand-sand card-shadow">
+                <div class="w-10 h-10 rounded-full bg-brand-sand text-brand-goldDark font-bold flex items-center justify-center mb-4">2</div>
+                <h3 class="font-serif text-lg font-bold mb-2">Pošaljite upit (i slike)</h3>
+                <p class="text-sm text-brand-dark/75 leading-relaxed">Sajt će automatski sastaviti poruku za <strong>WhatsApp</strong> ili <strong>Instagram</strong>. Ako poručujete 3D figuricu osobe, u četu nam samo pošaljite 2-3 fotografije.</p>
+            </div>
+            <div class="bg-white p-7 rounded-2xl border border-brand-sand card-shadow">
+                <div class="w-10 h-10 rounded-full bg-brand-sand text-brand-goldDark font-bold flex items-center justify-center mb-4">3</div>
+                <h3 class="font-serif text-lg font-bold mb-2">Izrada u Жми радионици</h3>
+                <p class="text-sm text-brand-dark/75 leading-relaxed">Nakon potvrde dizajna, pokrećemo 3D štampače i CNC mašinu. Vaš unikatni poklon stiže pažljivo upakovan!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL ZA PERSONALIZACIJU I NARUDŽBU -->
+    <div id="order-modal" class="fixed inset-0 z-50 hidden bg-brand-dark/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-brand-sand relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-brand-cream hover:bg-brand-sand flex items-center justify-center text-brand-dark font-bold">✕</button>
+            
+            <span id="modal-badge" class="text-xs font-bold uppercase tracking-widest text-brand-goldDark">Personalizacija</span>
+            <h3 id="modal-title" class="font-serif text-2xl font-bold mt-1">Naziv proizvoda</h3>
+            <p id="modal-price" class="text-lg font-semibold text-brand-goldDark mt-1"></p>
+
+            <div id="modal-photo-notice" class="hidden mt-4 p-3.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs leading-relaxed">
+                📸 <strong>Napomena za fotografije:</strong> Pošto se 3D figurica modeluje prema stvarnoj osobi, nakon što kliknete na dugme za WhatsApp/Instagram ispod, u četu nam pošaljite <strong>2 do 3 jasne fotografije osobe</strong> (lice i figura/odjeća).
+            </div>
+
+            <form id="order-form" class="space-y-4 mt-5" onsubmit="event.preventDefault();">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-brand-dark/80 mb-1">Vaše ime</label>
+                    <input type="text" id="cust-name" required placeholder="Npr. Ana" class="w-full px-4 py-2.5 rounded-xl border border-brand-sand focus:border-brand-gold focus:outline-none text-sm">
+                </div>
+                <div>
+                    <label id="custom-field-label" class="block text-xs font-semibold uppercase tracking-wider text-brand-dark/80 mb-1">Detalji personalizacije</label>
+                    <textarea id="cust-details" rows="3" placeholder="Unesite tekst za natpis, broj za postolje, boju ili posebnu želju..." class="w-full px-4 py-2.5 rounded-xl border border-brand-sand focus:border-brand-gold focus:outline-none text-sm"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-brand-dark/80 mb-1">Za kada vam je potreban poklon?</label>
+                    <input type="text" id="cust-date" placeholder="Npr. do 15. novembra" class="w-full px-4 py-2.5 rounded-xl border border-brand-sand focus:border-brand-gold focus:outline-none text-sm">
+                </div>
+
+                <div class="pt-3 space-y-2.5">
+                    <button type="button" onclick="sendOrder('whatsapp')" class="w-full py-3.5 px-5 rounded-xl bg-[#25D366] hover:bg-[#1ebe57] text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-md transition">
+                        <span>💬 Poruči preko WhatsApp-a</span>
+                    </button>
+                    <button type="button" onclick="sendOrder('instagram')" class="w-full py-3.5 px-5 rounded-xl bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-md transition">
+                        <span>📸 Kopiraj tekst i poruči na Instagramu</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="o-nama" class="bg-brand-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="font-serif text-xl font-bold tracking-wider">ЖМИ РАДИОНИЦА</span>
+                <p class="text-xs text-white/60 mt-1">Unikatni 3D i CNC personalizovani pokloni. Izrađeno s ljubavlju.</p>
+            </div>
+            <div class="text-xs text-white/60">
+                © 2026 Жми радионица. Sva prava zadržana.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODULARNA BAZA PROIZVODA I LOGIKA -->
+    <script>
+        // 1. OVDJE UNOSIŠ SVOJ BROJ TELEFONA I INSTAGRAM PROFIL
+        const WHATSAPP_NUMBER = "381600000000"; // Zamijeni svojim brojem (bez + i nula na početku)
+        const INSTAGRAM_USERNAME = "zmi.radionica"; // Tvoj budući IG username
+
+        // 2. MODULARNA LISTA PROIZVODA (Lako dodaješ nove objekte u niz)
+        const productsData = [
+            {
+                id: "3d-figurica-osobe",
+                title: "Personalizovana 3D Figurica Drage Osobe",
+                category: "figurice",
+                occasion: "Rođendani • Jubileji • Ispraćaji",
+                price: "Po dogovoru (zavisno od dimenzije)",
+                badge: "Hit poklon",
+                requiresPhoto: true,
+                customPrompt: "Koga pravimo? Napišite broj ili ime za postolje (npr. '70'), prepoznatljive detalje (naočale, frizura, odjeća) i željenu boju:",
+                description: "Unikatna mini 3D skulptura izrađena po fotografiji drage osobe! Savršena za okrugle rođendane (poput broja 70 na postolju), penzije ili kao vječna uspomena.",
+                images: ["assets/img/figurica-1.jpg"]
+            },
+            {
+                id: "bluey-postolje",
+                title: "Heksagonalno Postolje za Bluey Figurice",
+                category: "djeca",
+                occasion: "Dječija soba • Rođendani",
+                price: "Spreman model",
+                badge: "Жми Бренд",
+                requiresPhoto: false,
+                customPrompt: "Želite li bijelu ili drugu boju postolja, i koliko pinova za figurice vam odgovara (standardno 12 pinova)?",
+                description: "Pametno dizajnirano 3D postolje sa 12 heksagonalnih pinova na koje se Bluey i prijatelji lako fiksiraju i stoje uspravno bez padanja. Sa ugraviranim originalnim žigom Жми радионице.",
+                images: ["assets/img/bluey-1.jpg", "assets/img/bluey-2.jpg", "assets/img/bluey-3.jpg"]
+            },
+            {
+                id: "halloween-ukras-vrata",
+                title: "Ukras za Vrata sa Nosačem za Špijunku (+ Poklon Kutija)",
+                category: "ukrasi",
+                occasion: "Halloween • Praznici • Useljenje",
+                price: "Ukras ili Komplet sa kutijom",
+                badge: "CNC + 3D Kombinacija",
+                requiresPhoto: false,
+                customPrompt: "Želite li samo ukras za vrata sa nosačem za špijunku ili komplet u eksplozivnoj poklon-kutiji sa slatkišima? Koji natpis želite (npr. 'Добро дошли')?",
+                description: "Višeslojni ukras sa duhovima, crnom mačkom i bundevom ('Добро дошли / Буу!'). Dolazi sa specijalnim 3D štampanim nosačem koji se kači direktno na špijunku vrata bez bušenja ili lijepljenja! Dostupno i u rasklopivoj poklon kutiji.",
+                images: ["assets/img/halloween-1.jpg", "assets/img/halloween-2.jpg"]
+            },
+            {
+                id: "3d-koverta-ispracaj",
+                title: "Personalizovana 3D Koverta za Ispraćaj Kolege",
+                category: "ispracaji",
+                occasion: "Ispraćaj iz firme • Rođendani • Vjenčanja",
+                price: "Personalizovana izrada",
+                badge: "Uskoro slike",
+                requiresPhoto: false,
+                customPrompt: "Unesite ime kolege/koleginice, naziv tima ili firme, internu šalu i poruku koju želite da izgraviramo na 3D koverti:",
+                description: "Zaboravite obične papirne koverte! Unikatna 3D/CNC izrađena koverta za novčani poklon ili vaučer, sa ugraviranim imenom kolege, potpisima tima i simbolima vaših zajedničkih projekata.",
+                images: ["assets/img/koverta-placeholder.jpg"]
+            }
+        ];
+
+        let currentProduct = null;
+
+        function renderProducts(filter = 'all') {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+
+            const filtered = filter === 'all' 
+                ? productsData 
+                : productsData.filter(p => p.category === filter);
+
+            filtered.forEach(prod => {
+                const card = document.createElement('div');
+                card.className = "bg-brand-cream rounded-2xl overflow-hidden border border-brand-sand card-shadow flex flex-col justify-between transition duration-300";
+                
+                const photoBadge = prod.requiresPhoto 
+                    ? `<span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 text-[11px] font-bold">📸 Šaljete sliku</span>` 
+                    : '';
+
+                card.innerHTML = `
+                    <div>
+                        <div class="relative h-64 bg-white overflow-hidden group">
+                            <img src="${prod.images[0]}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x600/EFE9E0/A87C44?text=${encodeURIComponent(prod.title)}'">
+                            <div class="absolute top-3 left-3 flex flex-wrap gap-1.5">
+                                <span class="px-3 py-1 rounded-full bg-brand-dark/85 text-white text-[11px] font-semibold backdrop-blur-sm">${prod.badge}</span>
+                                ${photoBadge}
+                            </div>
+                        </div>
+                        <div class="p-5">
+                            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-goldDark">${prod.occasion}</span>
+                            <h3 class="font-serif text-lg font-bold text-brand-dark mt-1 leading-snug">${prod.title}</h3>
+                            <p class="text-xs text-brand-dark/75 mt-2 leading-relaxed">${prod.description}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0 mt-2">
+                        <div class="flex items-center justify-between text-xs font-semibold text-brand-dark/80 mb-3 pt-3 border-t border-brand-sand">
+                            <span>Status: Dostupno</span>
+                            <span class="text-brand-goldDark">${prod.price}</span>
+                        </div>
+                        <button onclick="openModal('${prod.id}')" class="w-full py-3 rounded-xl bg-brand-dark hover:bg-brand-goldDark text-white font-semibold text-xs uppercase tracking-wider transition">
+                            Personalizuj i Poruči
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function filterProducts(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-dark', 'text-white');
+                btn.classList.add('bg-brand-cream', 'text-brand-dark');
+            });
+            event.target.classList.remove('bg-brand-cream', 'text-brand-dark');
+            event.target.classList.add('bg-brand-dark', 'text-white');
+            renderProducts(category);
+        }
+
+        function openModal(productId) {
+            currentProduct = productsData.find(p => p.id === productId);
+            if (!currentProduct) return;
+
+            document.getElementById('modal-title').innerText = currentProduct.title;
+            document.getElementById('modal-price').innerText = currentProduct.price;
+            document.getElementById('custom-field-label').innerText = currentProduct.customPrompt;
+            
+            const photoNotice = document.getElementById('modal-photo-notice');
+            if (currentProduct.requiresPhoto) {
+                photoNotice.classList.remove('hidden');
+            } else {
+                photoNotice.classList.add('hidden');
+            }
+
+            document.getElementById('order-modal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('order-modal').classList.add('hidden');
+        }
+
+        function sendOrder(platform) {
+            const name = document.getElementById('cust-name').value.trim() || "Kupac";
+            const details = document.getElementById('cust-details').value.trim() || "Standardna izrada";
+            const date = document.getElementById('cust-date').value.trim() || "Po dogovoru";
+
+            let message = `Здраво Жми радионица! 🦄🚜\n\nЖелим да поручим:\n📦 *Производ:* ${currentProduct.title}\n👤 *Име:* ${name}\n✨ *Персонализација:* ${details}\n📅 *Рок/Датум:* ${date}`;
+            
+            if (currentProduct.requiresPhoto) {
+                message += `\n📸 *Напомена:* Одмах у наставку шаљем фотографије особе за израду 3D фигурице!`;
+            }
+
+            if (platform === 'whatsapp') {
+                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+                window.open(url, '_blank');
+            } else {
+                navigator.clipboard.writeText(message).then(() => {
+                    alert("Tekst narudžbe je kopiran! Sada ćemo vas preusmjeriti na naš Instagram profil — samo zalijepite (Paste) poruku u DM ( i pošaljite slike ako je 3D figurica).");
+                    window.open(`https://instagram.com/${INSTAGRAM_USERNAME}`, '_blank');
+                });
+            }
+        }
+
+        // Inicijalno učitavanje kataloga
+        renderProducts();
+    </script>
+</body>
+</html>
